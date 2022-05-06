@@ -224,6 +224,8 @@ type Position @entity {
   # vars needed for fee computation
   feeGrowthInside0LastX128: BigInt!
   feeGrowthInside1LastX128: BigInt!
+  tokensOwed0: BigDecimal!
+  tokensOwed1: BigDecimal!
 }
 
 type PositionSnapshot @entity {
@@ -258,6 +260,8 @@ type PositionSnapshot @entity {
   # internal vars needed for fee computation
   feeGrowthInside0LastX128: BigInt!
   feeGrowthInside1LastX128: BigInt!
+  tokensOwed0: BigDecimal!
+  tokensOwed1: BigDecimal!
 }
 
 type Transaction @entity {
